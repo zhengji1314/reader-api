@@ -1,5 +1,5 @@
 const connect = require('../connect');
-
+// 获取章节列表
 const booktitles = (req, res) => {
     const id = req.query.id;
 

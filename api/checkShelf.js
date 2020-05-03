@@ -1,5 +1,5 @@
 const connect = require('../connect');
-
+// 查询书架信息
 const checkShelf = (req, res) => {
     const userId = req.query.userId;
     const bookId = req.query.bookId;

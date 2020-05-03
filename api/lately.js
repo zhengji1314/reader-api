@@ -1,5 +1,5 @@
 const connect = require('../connect');
-
+// 查询阅读记录
 const late = (req, res) => {
     const userId = req.query.userId;
     const bookId = req.query.bookId;

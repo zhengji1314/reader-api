@@ -27,13 +27,30 @@ app.get('/shelf', require('./api/shelf'));
 app.get('/checkShelf', require('./api/checkShelf'));
 app.get('/late', require('./api/lately'));
 app.get('/search', require('./api/search'));
+app.get('/getaccount', require('./api/getaccount'));
+app.get('/getImage', require('./api/getImage'));
+app.get('/deleteImg', require('./api/deleteImg'));
+app.get('/getbook', require('./api/getbook'));
+app.get('/deleteBookList', require('./api/deleteBookList'));
+app.get('/getArticleList', require('./api/getArticleList'));
+app.get('/deleteArticle', require('./api/deleteArticle'));
+app.get('/getcheck', require('./api/getcheck'));
 
 // post
 app.post('/login', require('./api/login'));
 app.post('/register', require('./api/register'));
 app.post('/inShelf', require('./api/insert-shelf'));
+app.post('/deleteBook', require('./api/deleteBook'));
 app.post('/lately', require('./api/lastread'));
+app.post('/account', require('./api/account'));
+app.post('/image', require('./api/image'));
+app.post('/addbook', require('./api/addbook'));
+app.post('/updataBook', require('./api/updataBook'));
+app.post('/addArticle', require('./api/addArticleList'));
+app.post('/updataArticle', require('./api/updataArticle'));
+app.post('/booktitle', require('./api/titles'));
+
 
 app.listen(7123, () => {
-    console.log('接口运行在7070');
+    console.log('接口运行在7123');
 })

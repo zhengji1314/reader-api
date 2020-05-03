@@ -1,5 +1,5 @@
 const connect = require('../connect');
-
+// 登录
 const login = (req, res) => {
     const user = req.body.user;
     const pwd = req.body.pwd;
