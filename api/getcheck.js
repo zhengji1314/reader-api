@@ -2,7 +2,7 @@ const connect = require('../connect');
 // 获取需要审核信息
 const getcheck = (req, res) => {
 		console.log(req)
-    const sql = `SELECT * FROM * `
+    const sql = `SELECT * FROM bookcheck WHERE serialize='${req.query.serialize}' `
     connect(sql, function (err, results, fileds) {
         if (err) throw err;
 				console.log(results)

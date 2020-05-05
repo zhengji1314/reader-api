@@ -3,7 +3,7 @@ const connect = require('../connect');
 const book = (req, res) => {
     const book = req.query.book;
     const bookId = req.query.id;
-		const sql1=`SELECT * FROM book${book} WHERE serialize='3' id=${bookId}`;
+		const sql1=`SELECT * FROM book${book} WHERE serialize='2' AND id=${bookId}`;
 		const sql2=`SELECT * FROM book${book} WHERE id=${bookId}`;
     connect(book.length>5?sql1:sql2, function (err, results, fileds) {
         if (err) throw err;

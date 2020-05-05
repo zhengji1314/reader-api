@@ -10,6 +10,10 @@ const updataArticle = (req, res) => {
         if (results.affectedRows === 1) {
 					console.log('修改成功')
             res.send(true)
+						connect(`UPDATE bookcheck SET serialize='${req.body.serialize}' WHERE book_id='${req.body.bookid}' AND article_id='${req.body.id}';`, function (err, results, fileds) {
+						    if (err) throw err;
+						 
+						})
         } else {
             res.send(false)
         }

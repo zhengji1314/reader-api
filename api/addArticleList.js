@@ -1,5 +1,5 @@
 const connect = require('../connect');
-// 新增作品
+// 新增作品章节
 const addArticle = (req, res) => {
 		const bookid = 'book' + req.body.bookid;
 		console.log(bookid)

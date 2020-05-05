@@ -9,7 +9,7 @@ const addbook = (req, res) => {
         if (err) throw err;
         res.send(results)
 				// 创建表
-				connect(`CREATE TABLE book${id} (id decimal(15,0),err varchar(255), serialize varchar(10), bookName varchar(100),title varchar(100), content mediumtext)ENGINE=InnoDB DEFAULT CHARSET=utf8`, function (err, results, fileds) {
+				connect(`CREATE TABLE book${id} (id decimal(15,0),err varchar(255),cause varchar(255), serialize varchar(10), bookName varchar(100),title varchar(100), content mediumtext)ENGINE=InnoDB DEFAULT CHARSET=utf8`, function (err, results, fileds) {
 				    if (err) throw err;
 				    console.log('创建表')
 						const sql2 = `INSERT INTO \`book\`.\`booktitles\`(\`id\`, \`name\`)

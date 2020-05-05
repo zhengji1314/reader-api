@@ -35,6 +35,8 @@ app.get('/deleteBookList', require('./api/deleteBookList'));
 app.get('/getArticleList', require('./api/getArticleList'));
 app.get('/deleteArticle', require('./api/deleteArticle'));
 app.get('/getcheck', require('./api/getcheck'));
+app.get('/getRole', require('./api/getRole'));
+
 
 // post
 app.post('/login', require('./api/login'));
@@ -49,7 +51,10 @@ app.post('/updataBook', require('./api/updataBook'));
 app.post('/addArticle', require('./api/addArticleList'));
 app.post('/updataArticle', require('./api/updataArticle'));
 app.post('/booktitle', require('./api/titles'));
-
+app.post('/addCheck', require('./api/addcheck'));
+app.post('/checkBook', require('./api/checkBook'));
+app.post('/addRole', require('./api/addRole'));
+app.post('/changeRole', require('./api/changeRole'));
 
 app.listen(7123, () => {
     console.log('接口运行在7123');
